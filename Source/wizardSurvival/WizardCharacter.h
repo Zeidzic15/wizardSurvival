@@ -8,11 +8,11 @@
 #include "WizardCharacter.generated.h"
 
 class USpringArmComponent;
-class UCameraCompoonent;
+class UCameraComponent;
 class UInputAction;
 struct FInputActionValue;
 
-DECLAREE_LOG_CATEGORY_EXTERN(LogTemplateCharaacter, Log, All);
+DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 //simple player controllable third person character with controllable orbiting camera
 
@@ -20,7 +20,7 @@ UCLASS()
 class WIZARDSURVIVAL_API AWizardCharacter : public ACharacter
 {
 	GENERATED_BODY()
-//Camera boom positioning the camera behind char
+	//Camera boom positioning the camera behind char
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"));
 	USpringArmComponent* CameraBoom;
 
@@ -80,3 +80,4 @@ protected:
 	/** Mouse Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* MouseLookAction;
+};

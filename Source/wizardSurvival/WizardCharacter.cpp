@@ -49,13 +49,6 @@ void AWizardCharacter::BeginPlay()
 	
 }
 
-// Called every frame
-void AWizardCharacter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-
 // Called to bind functionality to input
 void AWizardCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
